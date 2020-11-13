@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: green;
+  color: aqua;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  color: aqua;
+  text-decoration: none;
+  font-family: Arial, Helvetica, fantasy;
+  font-weight: bolder;
+  background-color: rgb(158, 158, 14);
+  border-radius: 10px;
+  border-style: groove;
+  border-color: royalblue;
+  padding: 8px 20px;
+}
