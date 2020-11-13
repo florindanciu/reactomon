@@ -24,13 +24,11 @@ class Pokemons extends Component {
     const textToDisplay = this.state.loading
       ? "loading..."
       : this.state.pokemons.map((pokemon) => (
-          <li key={pokemon.name}>{pokemon.name}</li>
+          <div className="card" key={pokemon.name}>
+            <div>{pokemon.name}</div>
+          </div>
         ));
-    return (
-      <div>
-        <ol>{textToDisplay}</ol>
-      </div>
-    );
+    return <div className="cards">{textToDisplay}</div>;
   }
 }
 
