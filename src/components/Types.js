@@ -17,7 +17,7 @@ function Types() {
   const textToDisplay = isLoading
     ? "loading types..."
     : loadedTypes.map((type) => (
-        <div className="card" key={type.name}>
+        <div className="type-card" key={type.name}>
           <div>{type.name}</div>
         </div>
       ));

@@ -11,7 +11,7 @@ function Details(props) {
       setIsLoading(false);
       setLoadedDetails(res.data);
     });
-  });
+  }, []);
 
   const textToDisplay = isLoading ? (
     "details are loading..."

@@ -52,6 +52,8 @@ nav {
 .card {
   display: grid;
   padding: 20px;
+  font-variant-caps: all-small-caps;
+  font-size: large;
   border-radius: 20px;
   background-color: rgb(25, 221, 107);
   align-items: center;
@@ -61,6 +63,8 @@ nav {
 .details-card {
   display: flex;
   padding: auto;
+  font-variant: small-caps;
+  font-size: x-large;
   border-radius: 20px;
   background-color: rgb(25, 221, 107);
   justify-content: space-around;
@@ -71,7 +75,20 @@ nav {
 }
 
 .details-card ul {
+  font-size: medium;
   list-style: none;
+}
+
+.type-card {
+  display: grid;
+  padding: 20px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-size: larger;
+  font-weight: 900;
+  border-radius: 20px;
+  background-color: rgb(25, 221, 107);
+  align-items: center;
 }
 
 .card img {

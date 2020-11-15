@@ -16,7 +16,7 @@ function Pokemons() {
   }, []);
 
   const textToDisplay = isLoading
-    ? "loading..."
+    ? "pokemons are loading..."
     : loadedPokemons.map((pokemon) => (
         <div className="card" key={pokemon.name}>
           <Link
