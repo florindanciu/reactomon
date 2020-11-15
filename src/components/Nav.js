@@ -6,9 +6,6 @@ function Nav() {
     <nav>
       <h3>Reactomon</h3>
       <ul className="nav-links">
-        <Link to="/" className="link">
-          <li>Home</li>
-        </Link>
         <Link to="/pokemons" className="link">
           <li>Pokemons</li>
         </Link>

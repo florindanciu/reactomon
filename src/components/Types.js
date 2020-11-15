@@ -13,7 +13,6 @@ class Types extends Component {
   componentDidMount() {
     this.setState({ loading: true });
     axios.get(`https://pokeapi.co/api/v2/type`).then((res) => {
-      console.log(res.data.results);
       this.setState({
         loading: false,
         types: res.data.results,
@@ -24,12 +23,12 @@ class Types extends Component {
   render() {
     const textToDisplay = this.state.loading
       ? "loading..."
-      : this.state.types.map((type) => <li>{type.name}</li>);
-    return (
-      <div>
-        <ol>{textToDisplay}</ol>
-      </div>
-    );
+      : this.state.types.map((type) => (
+          <div className="card" key={type.name}>
+            <div>{type.name}</div>
+          </div>
+        ));
+    return <div className="cards">{textToDisplay}</div>;
   }
 }
 
